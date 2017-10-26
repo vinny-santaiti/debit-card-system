@@ -90,8 +90,8 @@ if __name__ == '__main__':
             elif key == 2:
                 print 'enter card id:'
                 key = input()
-                if key and key in dcs.cards.get(key):
-                    current_id = key
+                if key and str(key) in dcs.cards:
+                    current_id = str(key)
             elif key == 3:
                     print 'creating new card, enter balance:'
                     key = input()
